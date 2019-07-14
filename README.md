@@ -1,7 +1,11 @@
 # Bank-Marketing-and-Business-Intelligence
 商务智能实训展示，产品预测
 
+## 文件目录
 
+* data ：存放数据集，与预处理后的excel文件
+* DV：存放工程文件，注明功能与版本号
+* img：存放效果图片，在目录下的README注明图片说明
 
 ## TODO
 

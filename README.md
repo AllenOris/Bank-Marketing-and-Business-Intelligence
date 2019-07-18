@@ -15,15 +15,69 @@
 4. 训练结果可视化
 5. PPT
 
-## 数据集
-
-http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
-
-预测用户是否接受某产品的推销
-
 ## 学习与参考
 
 * ![img](https://www.oracle.com/webfolder/s/analytic-store/i/sample.png)**Machine Learning Approach to Chronic Kidney Analysis** 肾病预测，参考其绘图类型　<https://www.oracle.com/solutions/business-analytics/data-visualization/examples.html>
 * **DV Workshop - Basics of Training & Applying Predictive Models w/ DV**　如何用data-visualization使用机器学习模型　<https://www.oracle.com/solutions/business-analytics/data-visualization/tutorials.html>
 * **Bank-Marketing**　github开源python 分析过程 <https://github.com/kunalBhashkar/Bank-Marketing-Data-Set-Classification>
 
+1. 
+
+## 数据集
+
+http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+
+预测用户是否接受某产品的推销
+
+### 说明
+
+特征数量:17
+
+数据集上传日期:2012-2-14
+
+分类:二分类
+
+领域:商业
+
+1）bank-additional-full.csv: 包含所有数据（41188）和20个输入，并按日期排序（从2008年5月到2010年11月） 
+2）bank-additional.csv: 抽取其中10％的示例（4119），从1）中随机选择，以及20个输入。
+3）bank-full.csv: 包含所有示例和17个输入，按日期排序
+4）bank.csv: 具有10％的示例和17个输入，从(3)中随机选择
+
+### 特征信息
+
+**输入变量**：
+
+(客户自身因素)
+
+1. age 年龄:（数字）
+2. job 工作：工作类型（分类：'管理员'，'蓝领'，'企业家'，'女佣'，'管理'，'退休' ，'自雇人士'，'服务'，'学生'，'技师'，'失业'，'未知'）
+3. marital 婚姻：婚姻状况（分类：'离婚'，'已婚'，'单身'，'未知'; 注意：'离婚'意味着离婚或丧偶）
+4. education 教育（分类：'basic.4y'，'basic.6y'，'basic.9y'，'high.school'，'illiterate'，'professional.course '，'university.degree'，'未知'）
+5. default 违约：是否有违约？（分类：'不'，' 
+   是'，'未知'） 
+6. housing  住房：有住房贷款吗？（分类：'不'，'是'，'未知'）
+7. loan 贷款：有个人贷款吗？（分类：'不'，'是'，'未知'）
+
+(与当前广告推销的联系相关的因素)
+8. contact 联系人：联系人沟通类型（分类：'手机'，'电话'）
+9. month 月：最后一次联系的月份（分类：'jan'，'feb'，' mar'，...，'nov'，'dec'）
+10. day_of_week：最后一次联系的日子（分类：'mon'，'tue'，'wed'，'thu'，'fri'）
+11. duration 持续时间：联系持续时间，以秒为单位（数字）。**重要说明：此属性高度影响输出目标**（例如，如果持续时间= 0，则y ='否'）。然而，在执行呼叫之前不知道持续时间。此外，在通话结束后，显然已知y。从而，此输入仅应包含在基准目的中，如果打算采用现实的预测模型，则应将其丢弃
+
+(其他因素)
+12. campaign 联系次数：此广告系列期间和此客户端执行的联系人数量（数字，包括最后一次联系）
+13. pdays：上一次广告系列上次联系客户端后经过的天数（数字; 999表示客户之前没联系过）
+14. previous 之前执行的联系人数量（数字）
+15. poutcome上一次营销活动的结果（分类：'失败'，'不存在'，'成功'）
+
+(社会和经济因素)  
+16. emp.var.rate：就业变化率 - 季度指标（数字）
+17. cons.price.idx：消费者价格指数 - 月度指标（数字） 
+18. cons.conf.idx：消费者信心指数 - 月度指标（数字） 
+19. euribor3m：euribor 3个月费率 - 每日指标（数字）
+20. nr.employed：员工人数 - 季度指标（数字）
+
+**输出变量**:
+
+21 - y - 客户是否订购了定期存款？（二进制：'是'，'不'）

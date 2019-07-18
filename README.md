@@ -31,7 +31,7 @@ http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
 
 ### 说明
 
-特征数量:17
+特征数量:20
 
 数据集上传日期:2012-2-14
 
@@ -40,9 +40,10 @@ http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
 领域:商业
 
 1）bank-additional-full.csv: 包含所有数据（41188）和20个输入，并按日期排序（从2008年5月到2010年11月） 
+
 2）bank-additional.csv: 抽取其中10％的示例（4119），从1）中随机选择，以及20个输入。
-3）bank-full.csv: 包含所有示例和17个输入，按日期排序
-4）bank.csv: 具有10％的示例和17个输入，从(3)中随机选择
+
+
 
 ### 特征信息
 
